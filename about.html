@@ -4,23 +4,44 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="about.css">
+    <script type="text/javascript" src="jquery2.js"></script>
+
+      <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Accordion - Default functionality</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+ 
+
     <title> ABOUT</title>
 
 </head>
 <body>
-	<h1 class="shine"> Pasmina </h1>
+
+<div id="accordion">
+
+	<h3> History </h3>
+	<div>
 	<p>
 	 Pashmina, popularly known as cashmere wool, derived its name from Pashm, which refers to the under fleece of the Himalayan mountain goat, called Chyangra (Capra Hircus) which lives in the high altitude of 12,000 feet in Himalayan regions of Nepal and in some remote regions of Tibetan Plateau.</p>
+	 </div>
 
-	 <h1 class="shine"> Speciality </h1>
+	 <h3> Speciality </h3>
+	 <div>
 	 <p>
 	Till early 20s it was limited upto the royal people of Tibet and Nepal. It was not a product it was a tradition among the royal people.It is supposed to be the softest wool across the globe from the Himalayan region and Tibetian plateau.As This paved a way for the initiation of cottage industries involved in making pasmina shawl. 
 	</p>
+	</div>
 
-	<h1 class="shine">Owners Review </h1>
+	<h3>Owners Review </h3>
+	<div>
 	<p>
 	Pashmina Shawls have been hand woven in Himalayan regions of Nepal and Tibet for decades.I spent my childhood playing with these cashmere wool.I grew up in Himalayan region where womens of the community used to make pashmina for there living.Now we have combined the skills of our mother and sisters to make the fine and best quality hamdmade pashmina.
 	</p>
+	</div>
+</div>
 </body>
 
 <script type="text/javascript">
@@ -33,7 +54,26 @@ _gaq.push(['_trackPageview']);
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 })();
+
+
 </script>
+
+<script type="text/javascript">
+	
+	/*function closeNav() {
+		Get=document.getElementById("mySidenav");
+    document.getElementById("abt")=Get;
+   */
+   
+}
+
+  $( function() {
+    $( "#accordion" ).accordion();
+  } );
+
+</script>
+
+
 
 
 </html>

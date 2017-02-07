@@ -3,26 +3,47 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
 </head>
 <body>
-    <link rel="stylesheet" type="text/css" href="jquery.css">
+    
  
     <!-- #region Jssor Slider Begin -->
     <!-- Generator: Jssor Slider Maker -->
     <!-- Source: http://www.jssor.com -->
     <!-- This code works with jquery library. -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  
+
+
+    <script type="text/javascript" src="jquery2.js"></script>
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
     <script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
     <script src="js/jssor.slider-22.1.6.mini.js" type="text/javascript"></script>
+    
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    
      
-    <script type="text/javascript" src="jquery.js">
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="jquery2.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="jquery.css">
     
   
     
         
     </script>
     
-    <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1030px;height:497px;overflow:hidden;visibility:hidden;background-color:#24262e;">
+    <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1030px;height:497px;overflow:hidden;visibility:hidden;background-color:#24262e;"  >
         <!-- Loading Screen -->
         <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
             <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
@@ -62,7 +83,7 @@
             <div>
                 <img data-u="image" src="img/07.jpg" />
                 <img data-u="thumb" src="img/thumb-07.jpg" />
-                <h1> SunLink Pasmina </h1>
+                
             </div>
             <div>
                 <img data-u="image" src="img/08.jpg" />
@@ -91,12 +112,12 @@
                 
             </div>
 
-            <div data-u="text1" class="x" style=""> Pasmina from the Himalayas </div>
-
+       <!--      <div data-u="text1" class="x" style=""> Pasmina from the Himalayas </div>
+-->
             
         </div>
-        <div data-u="text1" class="x"> Happiness is Handmade </div>
-        <!-- Thumbnail Navigator -->
+        <!--<div data-u="text1" class="x"> Happiness is Handmade </div>
+        <! Thumbnail Navigator -->
 
        
 
@@ -138,40 +159,121 @@
 
 
 
-</script>
+<!--
 
         <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="#" onclick="about()">About</a>
+                <a href="#" id="abt" onclick="about()">About</a>
                 <a href="#">Services</a>
                 <a href="#">Clients</a>
                 <a href="#">Contact</a>
         </div>
 
+-->
 
 
-<script>
-
-
-function openNav() {
-    document.getElementById("mySidenav").style.width = "450px";
-   
  
-}
 
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("jssor_1").style.marginLeft= "0";
-    document.body.style.backgroundColor = "white";
-}
 
-function about(){
-   
-            document.getElementById("mySidenav").innerHTML='<object type="type/html" data="about.html" ></object>';
+        <div id="accordion" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <button class="accordion"> About </button>
+            <div id="text-container1">
+
+                <p class="shine"> History </p>
+                    <p>
+                    Pashmina, popularly known as cashmere wool, derived its name from Pashm, which refers to the under fleece of the Himalayan mountain goat, called Chyangra (Capra Hircus) which lives in the high altitude of 12,000 feet in Himalayan regions of Nepal and in some remote regions of Tibetan Plateau.
+                    </p>
+
+                <p class="shine"> Speciality </p>
+                     <p>
+                    Till early 20s it was limited upto the royal people of Tibet and Nepal. It was not a product it was a tradition among the royal people.It is supposed to be the softest wool across the globe from the Himalayan region and Tibetian plateau.As This paved a way for the initiation of cottage industries involved in making pasmina shawl. 
+                    </p>
+
+                <p class="shine">Owners Review </p>
+                    <p>
+                    Pashmina Shawls have been hand woven in Himalayan regions of Nepal and Tibet for decades.I spent my childhood playing with these cashmere wool.I grew up in Himalayan region where womens of the community used to make pashmina for there living.Now we have combined the skills of our mother and sisters to make the fine and best quality hamdmade pashmina.
+                    </p>
+            </div>
+
+            <button class="accordion"> Contact Us </button>
+            <div id="text-container2">
+
+                <p class="shine2" > Contact Us </p>
+                    <p> Sun Link Traders </p>
+                    <p> Jyatha, Thamel (opposite janata Bank) Kathmandu, Nepal</p>
+                    <p> Office:4226689, Mob:9851061483, 9803694475 </p>
+                    <p> email: sunlinkph@gmail.com</p>
+            </div>
+        </div>
+     
+
+<script type="text/javascript">
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].onclick = function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  }
 }
 </script>
-     
-     
+
+<style>
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    overflow-x: hidden;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd;
+}
+
+button.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2212";
+}
+
+div #text-container1{
+    padding-top: : 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+div #text-container2{
+    padding: 20px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+
 </body>
 </html>
-

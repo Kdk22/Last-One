@@ -1,16 +1,40 @@
+body{
+    width: 500px;
+    
+    margin: 0 auto;
+
+
+}
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#text-container{
+      position: absolute;
+  top: 60px;
+  bottom: 0;
+  height: auto
+}
+
 h1.shine
 {
     font-size: 3em;
+    /*font-size: 3em;
     margin: 0 auto;
     width: 700px;
+    /*color:#FFF;*/
 }
 
 .shine
 {
-    background: #222 -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff)) 0 0 no-repeat;
+    background: #FFF -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff)) 0 0 no-repeat;
     -webkit-background-size: 125px;
     
-    color: rgba(255, 255, 255, 0.1);
+    color: rgba(255,215,0, 0.2);
     -webkit-background-clip: text;
     
     -webkit-animation-name: shine;
